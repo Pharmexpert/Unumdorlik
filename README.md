@@ -25,3 +25,32 @@ topics/inbox/<slug>.md  ──►  01 script  ──►  02 vocab+pdf  ──►
       ──►  04 align (so'z vaqtlari)  ──►  05 storyboard+rasmlar  ──►  06 render (ffmpeg)
       ──►  07 thumbnail+metadata  ──►  08 QA/tasdiq  ──►  09 YouTube upload (scheduled)
 ```
+
+## CLI (skelet, v0.1)
+
+```bash
+uv sync --extra llm --extra audio --extra pdf --extra images   # (+ --extra align, --extra youtube kerak bo'lsa)
+cp config/profiles/stack-b.yaml config/pipeline.yaml           # yoki stack-a.yaml; yoki UNUMDORLIK_PROFILE=stack-a
+cp .env.example .env                                           # GEMINI_API_KEY (bepul daraja) va h.k.
+
+uv run unumdorlik doctor                 # muhit tekshiruvi
+uv run unumdorlik inbox                  # topics/inbox dagi mavzular
+uv run unumdorlik schedule --apply       # kuniga 2 ta bo'sh slot (config.channel.publish_times) biriktiradi
+uv run unumdorlik run <slug> --from 01 --to 08
+uv run unumdorlik status                 # bosqichlar holati
+uv run unumdorlik images-check <slug>    # Antigravity /images-flow dan keyin
+uv run unumdorlik approve <slug> && uv run unumdorlik upload <slug>
+uv run unumdorlik process --limit 2 --to 08   # GitHub Actions har kuni shuni chaqiradi
+```
+
+Chiqish kodlari: `0` ok, `1` xato, `3` PAUSED (brauzer/inson qadami kerak — xabarda nima qilish yozilgan).
+
+| Bosqich | Stack A (bepul) | Stack B (obunalar) |
+|---|---|---|
+| 01 skript | `claude_cli` (Claude Code obunasi) yoki `gemini` (bepul daraja) | `claude_cli` |
+| 03 audio | `edge_tts` (so'z vaqtlari bilan) yoki `gemini_tts` bepul daraja | `gemini_tts` → limitda avtomatik `edge_tts` |
+| 04 align | edge vaqtlari → whisperx → baho | auto |
+| 05 rasm | Flow (bepul rasm) — Antigravity `/images-flow` | Flow (AI Pro) — Antigravity `/images-flow` |
+| 09 YouTube | Data API (audit o'tmaguncha private) | Data API |
+
+Profil farqi faqat YAML'da; kod yo'li bir xil (`config/profiles/`).

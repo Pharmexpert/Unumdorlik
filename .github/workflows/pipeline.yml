@@ -1,0 +1,68 @@
+name: pipeline
+
+on:
+  push:
+    branches: [main]
+    paths: ["topics/inbox/**"]
+  schedule:
+    - cron: "17 2 * * *"      # har kuni 02:17 UTC (07:17 Toshkent): inbox'dagi 2 mavzuni 08-bosqichgacha olib boradi
+  workflow_dispatch:
+    inputs:
+      slug: {description: "Faqat shu epizod (bo'sh = inbox)", required: false, default: ""}
+      from: {description: "--from", required: false, default: "01"}
+      to: {description: "--to", required: false, default: "08"}
+      profile: {description: "stack-a | stack-b", required: false, default: "stack-b"}
+
+concurrency: {group: pipeline, cancel-in-progress: false}
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions: {contents: write, pull-requests: write}
+    env:
+      UNUMDORLIK_PROFILE: ${{ github.event.inputs.profile || 'stack-b' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: uv sync --extra llm --extra audio --extra pdf --extra images
+      - name: Claude Code CLI (script.provider=claude_cli)
+        run: npm install -g @anthropic-ai/claude-code
+      - run: uv run unumdorlik doctor
+      - name: Run
+        run: |
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            uv run unumdorlik run "${{ github.event.inputs.slug }}" --from "${{ github.event.inputs.from }}" --to "${{ github.event.inputs.to }}" || [ $? -eq 3 ]
+          else
+            uv run unumdorlik schedule --apply
+            uv run unumdorlik process --limit 2 --to 08 || [ $? -eq 3 ]
+          fi
+      - name: Upload artifacts (video, pdf, thumbnail)
+        uses: actions/upload-artifact@v4
+        with:
+          name: episodes-${{ github.run_id }}
+          path: |
+            episodes/*/render/video.mp4
+            episodes/*/transcript.pdf
+            episodes/*/thumbnail.png
+            episodes/*/images/TODO.md
+          if-no-files-found: ignore
+      - name: Open review PR with episode metadata
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: episodes/auto-${{ github.run_id }}
+          title: "Episodes ready for review (${{ github.run_id }})"
+          commit-message: "Episode artifacts from pipeline run ${{ github.run_id }}"
+          body: |
+            Avtomatik ishlab chiqarilgan epizod artefaktlari. Tekshiring: `episodes/*/qa_report.json`, `metadata.json`, `images/TODO.md`.
+            Video/PDF/thumbnail — run artifact'larida. Tasdiq uchun merge qiling; so'ng `unumdorlik approve <slug>` + `upload`.
+          add-paths: |
+            episodes/**/*.json
+            episodes/**/*.md
+            episodes/**/*.srt
+            episodes/**/thumbnail.png
+            topics/**

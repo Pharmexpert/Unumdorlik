@@ -1,4 +1,4 @@
-# Stack B — Claude Code (obuna) + Google AI Pro (Flow, NotebookLM). API hisob-kitob yo'q.
+# Stack A — $0: Claude Code (obuna) yoki Gemini bepul darajasi; edge-tts; Flow bepul rasm; YouTube API (private).
 channel:
   name: "Unumdorlik English"
   niche: "English learning podcast for curious professionals"
@@ -12,19 +12,19 @@ hosts:
   A:
     name: Mia
     role: teacher
-    tts_voice: Kore                     # Gemini TTS ovozi; edge-tts fallback uchun avtomatik en-US-AriaNeural
+    tts_voice: en-US-AriaNeural
     style: "warm, clear, slightly slow"
     description: "a woman in her early 30s, shoulder-length dark wavy hair, round glasses, mustard cardigan, kind smile"
   B:
     name: James
     role: learner
-    tts_voice: Puck
+    tts_voice: en-GB-RyanNeural
     style: "curious, lively, friendly"
     description: "a man in his late 20s, short curly brown hair, light stubble, navy hoodie, expressive eyebrows"
   character_sheet_dir: assets/characters
 
 script:
-  provider: claude_cli                  # `claude -p` — Claude Code obunasi
+  provider: claude_cli                  # obuna bo'lmasa: gemini (GEMINI_API_KEY bepul daraja)
   model: claude-opus-5-5
   target_words: 2500
   words_per_minute: 140
@@ -34,7 +34,7 @@ script:
   cefr_wordlist: assets/cefr/wordlist.csv
 
 audio:
-  engine: gemini_tts                    # bepul daraja; limit tugasa avtomatik edge_tts
+  engine: edge_tts                      # 100% bepul, so'z vaqtlarini beradi; gemini_tts bepul darajasini ham sinab ko'ring
   gemini_tts_model: gemini-3.8-flash-tts
   sample_rate: 24000
   loudness_lufs: -16
@@ -45,7 +45,7 @@ alignment:
   engine: auto                          # edge timestamps -> whisperx -> estimate
 
 visuals:
-  engine: flow_browser                  # Antigravity /images-flow (Flow: rasm bepul, AI Pro kreditlari Veo uchun)
+  engine: flow_browser                  # Flow bepul: rasm kredit yemaydi; muqobil: manual (AI Studio)
   seconds_per_image: 35
   ken_burns: true
   intro_video: {enabled: false, model: veo-3.1}
