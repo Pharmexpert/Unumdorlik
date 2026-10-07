@@ -39,7 +39,9 @@ def _claude_cli(system: str, user: str, model: str, timeout: int) -> LLMResult:
     exe = shutil.which("claude")
     if not exe:
         raise LLMError("`claude` CLI topilmadi (Claude Code o'rnatilmagan yoki PATH da yo'q)")
-    cmd = [exe, "-p", "--output-format", "text", "--model", model]
+    # Pure text generation: no tools, one turn. Auth: subscription login, or CLAUDE_CODE_OAUTH_TOKEN in CI.
+    # NOTE: if ANTHROPIC_API_KEY is set, the CLI uses it (API billing) instead of the subscription.
+    cmd = [exe, "-p", "--output-format", "text", "--model", model, "--tools", "", "--max-turns", "1"]
     if system:
         cmd += ["--append-system-prompt", system]
     proc = subprocess.run(cmd, input=user, text=True, capture_output=True, timeout=timeout, check=False)

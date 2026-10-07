@@ -23,8 +23,7 @@ jobs:
     env:
       UNUMDORLIK_PROFILE: ${{ github.event.inputs.profile || 'stack-b' }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}   # obuna tokeni (claude setup-token). ANTHROPIC_API_KEY qo'ymang: u ustun turadi va API hisobidan sarflaydi
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5

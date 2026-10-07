@@ -22,22 +22,85 @@ Taxminiy vaqt: 30–40 daqiqa (character sheet'siz 15 daqiqa).
 asosida). Keyingi mavzular uchun `topics/inbox/EXAMPLE-topic.md` ni nusxalang; fayl nomi = `slug`.
 Qoidalar: slug faqat `a-z 0-9 -`; mazmun ≥ 30 so'z; `publish_at` bo'sh qolsa `schedule --apply` keyingi bo'sh slotni beradi.
 
-## 3. Claude Code (skript uchun) — 5 daqiqa
+## 3. Claude Code (skript uchun) — batafsil, 10–15 daqiqa
 
-**Lokal mashinada:**
+Maqsad: (a) kompyuteringizda `claude -p` obunangiz bilan ishlashi, (b) GitHub Actions'da ham API kalitsiz,
+obuna orqali ishlashi. Manba: code.claude.com/docs (setup, authentication, headless, cli-reference).
+
+### 3.1. O'rnatish
+
+| OS | Buyruq |
+|---|---|
+| macOS / Linux | `curl -fsSL https://claude.ai/install.sh \| bash` |
+| Windows PowerShell | `irm https://claude.ai/install.ps1 \| iex` |
+| Windows CMD | `curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd` |
+| Muqobil (npm, Node ≥ 22) | `npm install -g @anthropic-ai/claude-code` |
+
+Tekshirish: `claude --version` (masalan `2.1.x`).
+
+### 3.2. Obuna bilan kirish
+
+1. Terminalda `claude` deb yozing → brauzer ochiladi → Claude Pro/Max akkauntingiz bilan kiring.
+2. Claude ichida `/status` yozing. Kutilgan: **Login method: claude.ai** va emailingiz.
+   Agar **Login method: API key** chiqsa — muhitda `ANTHROPIC_API_KEY` bor va u obunadan **ustun** turadi
+   (API hisobidan pul sarflaydi). Yechim: `unset ANTHROPIC_API_KEY` (Windows: `Remove-Item Env:ANTHROPIC_API_KEY`),
+   `.env`/profil fayllaridan olib tashlang, `/status` bilan qayta tekshiring.
+3. Chiqish: `/exit`.
+
+Kredensiallar: macOS — Keychain; Linux — `~/.claude/.credentials.json` (0600); Windows — `%USERPROFILE%\.claude\.credentials.json`.
+Chiqib ketish: `claude` ichida `/logout`. "Your login expires in 3 days" chiqsa — `/login`.
+
+### 3.3. Headless (`-p`) test — liniya aynan shu rejimda ishlaydi
+
 ```bash
-npm install -g @anthropic-ai/claude-code
-claude            # birinchi ishga tushirishda brauzer orqali obunangiz bilan kiring
-echo "Reply OK" | claude -p --model claude-opus-5-5   # "OK" qaytsa — tayyor
+echo "Reply with the single word OK" | claude -p --output-format text --model claude-opus-5-5 --tools "" --max-turns 1
 ```
-**GitHub Actions uchun (obuna bilan, API kalitsiz):**
+Kutilgan chiqish: `OK`. Shu bilan bir xil buyruqni `unumdorlik` 01-bosqichda chaqiradi (`src/unumdorlik/llm.py`):
+`--tools ""` — vositalarsiz, faqat matn; `--max-turns 1` — bitta javob; prompt stdin orqali (10 MB gacha).
+`--model` qiymatlari: `opus`, `sonnet`, `haiku` yoki to'liq ID (`claude-opus-5-5`, `claude-sonnet-5-5`).
+
+Liniya orqali tekshirish (ikkalasini bir vaqtda):
 ```bash
-claude setup-token     # uzoq muddatli OAuth token chiqaradi (bir marta ko'rsatiladi)
-gh secret set CLAUDE_CODE_OAUTH_TOKEN
+uv run unumdorlik doctor --probe      # probe:claude_cli OK  (va GEMINI_API_KEY bo'lsa probe:gemini OK)
 ```
-Eslatma: Actions'dagi `claude -p` obuna limitlaridan sarflaydi (kuniga 2 epizod ≈ 4–6 so'rov, muammo emas).
-Agar obuna token'ini CI'da ishlatmoqchi bo'lmasangiz: workflow'da `profile: stack-a` + `script.provider: gemini`
-(bepul Gemini darajasi) ishlating — kod o'zgarmaydi.
+
+Limitlar: `-p` rejimi **obuna kvotasidan** sarflaydi. Ikki xil limit bor: sessiya limiti (bir necha soatda tiklanadi)
+va haftalik limit; Opus va Sonnet uchun alohida "chelaklar". Opus limiti tugasa, Sonnet'ga o'tish ishlaydi:
+`config/pipeline.yaml` → `script.model: claude-sonnet-5-5`. Kuniga 2 epizod ≈ 4–6 so'rov (skript, lug'at,
+storyboard, metadata) — Pro uchun ham yetarli; Opus'da 1 skript ≈ 8 daqiqa.
+
+### 3.4. GitHub Actions uchun token (`claude setup-token`)
+
+`setup-token` — obuna uchun bir yillik OAuth token chiqaradi (Pro, Max, Team, Enterprise). CLI uni
+`CLAUDE_CODE_OAUTH_TOKEN` o'zgaruvchisidan o'qiydi; token faqat model so'rovlari uchun ishlaydi.
+
+```bash
+claude setup-token        # brauzer ochiladi → tasdiqlang → terminalda token bir marta ko'rsatiladi (saqlanmaydi!)
+```
+Tokenni nusxalab GitHub'ga qo'ying — **faqat shu ikki usuldan biri**, chatga yoki faylga yozmang:
+- Veb: repo → Settings → Secrets and variables → Actions → New repository secret → Name `CLAUDE_CODE_OAUTH_TOKEN`.
+- Terminal (gh CLI bo'lsa): `gh secret set CLAUDE_CODE_OAUTH_TOKEN` → tokenni yopishtiring → Enter.
+
+Workflow (`.github/workflows/pipeline.yml`) tokenni `env` orqali beradi va `npm i -g @anthropic-ai/claude-code`
+o'rnatadi — qo'shimcha sozlash kerak emas. **Muhim:** `ANTHROPIC_API_KEY` secret'ini **qo'ymang** (yoki bo'sh qoldiring);
+u bo'lsa CLI obuna tokenini emas, API kalitni ishlatadi va pul sarflaydi.
+
+Tekshirish: Actions → **pipeline** → Run workflow → `slug` bo'sh, `to` = `01` → logda
+`01 script ok — ~2500 so'z` chiqsa tayyor (yoki `doctor` qadamida `claude CLI OK`).
+
+Xavfsizlik: token 1 yil amal qiladi, hujjatlarda bekor qilish buyrug'i yo'q — sizib chiqsa `/logout` qilib
+qayta `setup-token` oling va secret'ni yangilang. Token hech qachon repoga, `.env.example`ga yoki chatga tushmasin.
+
+### 3.5. Muammolar
+
+| Belgi | Sabab | Yechim |
+|---|---|---|
+| `claude: command not found` | PATH | terminalni qayta oching; npm bo'lsa `npm bin -g` ni PATH'ga qo'shing |
+| `/status` → API key | `ANTHROPIC_API_KEY` o'rnatilgan | o'zgaruvchini olib tashlang |
+| `-p` javob bermaydi / login so'raydi | kirilmagan | `claude` → brauzerda kiring |
+| Actions'da `claude -p` 401/"not logged in" | secret yo'q yoki nomi xato | `CLAUDE_CODE_OAUTH_TOKEN` nomini tekshiring |
+| "You've hit your Opus limit" | sessiya/haftalik limit | `script.model: claude-sonnet-5-5` yoki kuting |
+| `claude -p` ishlaydi, lekin JSON emas | model izoh qo'shgan | liniya 1 marta "faqat JSON" deb qayta so'raydi; 2-xatoda bosqich FAILED — logni yuboring |
 
 ## 4. Character sheet — 15–20 daqiqa (bir marta)
 

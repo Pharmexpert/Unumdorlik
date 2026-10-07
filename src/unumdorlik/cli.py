@@ -39,7 +39,8 @@ def version() -> None:
 
 
 @app.command()
-def doctor(profile: str | None = _profile_opt) -> None:
+def doctor(profile: str | None = _profile_opt,
+           probe: bool = typer.Option(False, help="claude -p va Gemini API'ga haqiqiy test so'rov yuboradi")) -> None:
     """Check binaries, keys, optional packages and the active profile."""
     cfg, root, path = _cfg(profile)
     t = Table(title=f"doctor — profil: {path.relative_to(root)}")
@@ -66,6 +67,17 @@ def doctor(profile: str | None = _profile_opt) -> None:
     row("YouTube token", (root / cfg.youtube.token_file).exists(), cfg.youtube.token_file)
     row("character sheet", any((root / cfg.hosts.character_sheet_dir).glob("*.png")), cfg.hosts.character_sheet_dir)
     row("CEFR wordlist", (root / cfg.script.cefr_wordlist).exists(), cfg.script.cefr_wordlist)
+    if probe:
+        from .llm import LLMError, complete
+
+        for prov in {cfg.script.provider, "gemini"} & {"claude_cli", "gemini"}:
+            try:
+                r = complete(prov, "", "Reply with the single word OK", cfg.script.model if prov == "claude_cli" else None, timeout=180)
+                row(f"probe:{prov}", "OK" in r.text.upper(), f"{r.model} → {r.text.strip()[:40]!r}")
+            except LLMError as e:
+                row(f"probe:{prov}", False, str(e)[:90])
+    if os.environ.get("ANTHROPIC_API_KEY") and cfg.script.provider == "claude_cli":
+        row("ANTHROPIC_API_KEY + claude_cli", False, "claude -p obuna o'rniga API kalitni ishlatadi (pullik!) — kalitni olib tashlang")
     rprint(t)
     rprint(f"engines: script={cfg.script.provider} audio={cfg.audio.engine} align={cfg.alignment.engine} "
            f"visuals={cfg.visuals.engine} publish_times={cfg.channel.publish_times} tz={cfg.channel.timezone}")
