@@ -31,14 +31,14 @@ jobs:
       - run: uv sync --extra llm --extra audio --extra pdf --extra images
       - name: Claude Code CLI (script.provider=claude_cli)
         run: npm install -g @anthropic-ai/claude-code
-      - run: uv run unumdorlik doctor
+      - run: uv run unumdorlik doctor --probe
       - name: Run
         run: |
           if [ -n "${{ github.event.inputs.slug }}" ]; then
             uv run unumdorlik run "${{ github.event.inputs.slug }}" --from "${{ github.event.inputs.from }}" --to "${{ github.event.inputs.to }}" || [ $? -eq 3 ]
           else
             uv run unumdorlik schedule --apply
-            uv run unumdorlik process --limit 2 --to 08 || [ $? -eq 3 ]
+            uv run unumdorlik process --limit 2 --to "${{ github.event.inputs.to || '08' }}" || [ $? -eq 3 ]
           fi
       - name: Upload artifacts (video, pdf, thumbnail)
         uses: actions/upload-artifact@v4
