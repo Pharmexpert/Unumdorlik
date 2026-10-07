@@ -96,6 +96,9 @@ qayta `setup-token` oling va secret'ni yangilang. Token hech qachon repoga, `.en
 | Belgi | Sabab | Yechim |
 |---|---|---|
 | `claude: command not found` | PATH | terminalni qayta oching; npm bo'lsa `npm bin -g` ni PATH'ga qo'shing |
+| `Not logged in · Please run /login` | `-p` ishlatishdan oldin interaktiv kirish qilinmagan | `claude` → `/login` → brauzer → claude.ai akkaunt → `/status` → `/exit`, so'ng testni qayta bajaring |
+| npm: `allow-scripts ... postinstall: node install.cjs` (Windows) | npm o'rnatish skriptlarini bloklagan | `npm install -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code` yoki native: `irm https://claude.ai/install.ps1 \| iex` |
+| Windows: "PowerShell (x86)" / `C:\windows\system32` dan ishlash | 32-bit konsol, admin katalog | oddiy 64-bit "Windows PowerShell" yoki "Terminal"ni oching, `cd ~` qiling; loyiha ham shu yerda klonlanadi |
 | `/status` → API key | `ANTHROPIC_API_KEY` o'rnatilgan | o'zgaruvchini olib tashlang |
 | `-p` javob bermaydi / login so'raydi | kirilmagan | `claude` → brauzerda kiring |
 | Actions'da `claude -p` 401/"not logged in" | secret yo'q yoki nomi xato | `CLAUDE_CODE_OAUTH_TOKEN` nomini tekshiring |
