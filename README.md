@@ -7,6 +7,7 @@ Maqsad: inson faqat **mavzu tanlaydi** va **tasdiqlaydi**, qolgan hamma bosqich 
 
 | Hujjat | Mazmuni |
 |---|---|
+| [ANTIGRAVITY-QOLLANMA.md](ANTIGRAVITY-QOLLANMA.md) | **Boshlash shu yerdan:** paketni ochish va Antigravity'da `/start` bilan bitta so'rovda ishga tushirish |
 | [docs/01-REJA.md](docs/01-REJA.md) | To'liq reja: arxitektura, bosqichlar, vositalar tanlovi, MCP ulanishlar, xarajat, xavflar |
 | [docs/02-YOL-XARITASI.md](docs/02-YOL-XARITASI.md) | Bosqichma-bosqich yo'l xaritasi (haftalar, natijalar, qabul mezonlari) |
 | [docs/03-FORMAT-STANDARTI.md](docs/03-FORMAT-STANDARTI.md) | Epizod formati standarti (namuna videolar tahlili asosida) |

@@ -56,6 +56,7 @@ agentda**. Shunda agent kvotasi tejaladi (1 epizod ≈ 3–5 agent so'rovi) va n
 
 - `.agent/rules/unumdorlik.md` — agent uchun doimiy qoidalar (format standarti, "faqat CLI chaqir",
   brauzer xavfsizligi, hech qachon to'lov/parol kiritmaslik).
+- `.agent/workflows/start.md` — `/start`: **bitta so'rov** — muhit, auth, character sheet, birinchi epizod, nashr.
 - `.agent/workflows/episode.md` — `/episode <slug>`: to'liq epizod.
 - `.agent/workflows/images-flow.md` — `/images-flow <slug>`: faqat Flow rasmlar.
 - `.agent/workflows/publish-studio.md` — `/publish-studio <slug>`: faqat YouTube Studio.
