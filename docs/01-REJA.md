@@ -182,10 +182,19 @@ Obunalar (ixtiyoriy): Google AI Pro/Ultra (Flow kreditlari, NotebookLM limitlari
 | Musiqa litsenziyasi | past | YouTube Audio Library yoki sotib olingan trek |
 | AI-kontent siyosati (YouTube "altered content" belgisi) | past | Yuklashda `containsSyntheticMedia` belgisi qo'yiladi (talab qilinsa) |
 
-## 8. Hal qilinishi kerak bo'lgan qarorlar (sizdan)
+## 8. Bepul va Antigravity variantlari
+
+Bu rejadagi pullik API'larning bepul muqobillari `docs/04-BEPUL-VARIANTLAR.md` da (uchta tayyor stack),
+brauzer-agent orqali Flow/NotebookLM/YouTube Studio'ni boshqaradigan Antigravity varianti
+`docs/05-ANTIGRAVITY-VARIANTI.md` da. Tavsiya: boshlash uchun Stack B (Claude Code + Google AI Pro),
+brauzer bosqichlari Antigravity'da, kodli bosqichlar GitHub Actions'da.
+
+## 9. Hal qilinishi kerak bo'lgan qarorlar (sizdan)
 
 1. **Boshlovchilar ismi/ovozi/ko'rinishi** — 3 variant character sheet tayyorlanadi, bittasini tanlaysiz.
 2. **Audio rejimi:** A (Gemini TTS, tavsiya) yoki B (NotebookLM) asosiy bo'lsinmi?
+2a. **Byudjet:** Stack A ($0) / Stack B ($20/oy, tavsiya) / Stack C (~$2/epizod) — `docs/04`.
+2b. **Bajaruvchi muhit:** GitHub Actions + Antigravity (tavsiya) yoki faqat Antigravity (o'z kompyuteringizda)?
 3. **Mavzu kiritish kanali:** Git inbox (tavsiya) / Google Drive / Gmail.
 4. **Tasdiq kanali:** GitHub PR (tavsiya) / Telegram.
 5. **Nashr chastotasi:** haftasiga 3 (tavsiya boshlang'ich) yoki har kuni.

@@ -10,6 +10,9 @@ Maqsad: inson faqat **mavzu tanlaydi** va **tasdiqlaydi**, qolgan hamma bosqich 
 | [docs/01-REJA.md](docs/01-REJA.md) | To'liq reja: arxitektura, bosqichlar, vositalar tanlovi, MCP ulanishlar, xarajat, xavflar |
 | [docs/02-YOL-XARITASI.md](docs/02-YOL-XARITASI.md) | Bosqichma-bosqich yo'l xaritasi (haftalar, natijalar, qabul mezonlari) |
 | [docs/03-FORMAT-STANDARTI.md](docs/03-FORMAT-STANDARTI.md) | Epizod formati standarti (namuna videolar tahlili asosida) |
+| [docs/04-BEPUL-VARIANTLAR.md](docs/04-BEPUL-VARIANTLAR.md) | Har bosqich uchun bepul muqobillar va uchta tayyor stack ($0 / $20 oy / $2 epizod) |
+| [docs/05-ANTIGRAVITY-VARIANTI.md](docs/05-ANTIGRAVITY-VARIANTI.md) | Google Antigravity orqali amalga oshirish: brauzer-agent bilan Flow, NotebookLM, YouTube Studio |
+| [.agent/](.agent/) | Antigravity qoidalari va `/episode`, `/images-flow`, `/publish-studio` workflow'lari |
 | [prompts/](prompts/) | Har bir AI bosqichi uchun prompt shablonlari |
 | [config/pipeline.example.yaml](config/pipeline.example.yaml) | Liniya konfiguratsiyasi namunasi |
 | [topics/inbox/](topics/inbox/) | Yangi mavzular shu yerga qo'yiladi (bitta `.md` fayl = bitta epizod) |

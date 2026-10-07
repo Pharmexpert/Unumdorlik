@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}" }
+    },
+    "notebooklm": {
+      "command": "notebooklm",
+      "args": ["mcp"],
+      "_comment": "Unofficial (notebooklm-py). Optional, audio mode B only. Install: uv tool install 'notebooklm-py[browser]' && notebooklm login"
+    },
+    "gflow": {
+      "command": "gflow",
+      "args": ["mcp", "run"],
+      "_comment": "Unofficial (gflow-cli, alpha). Alternative to the browser sub-agent for Flow. Install: pip install gflow-cli && gflow auth login --browser chrome"
+    }
+  }
+}
