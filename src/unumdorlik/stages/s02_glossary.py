@@ -57,7 +57,10 @@ def run(ctx: StageContext) -> str:
     cands = candidates(sc, wl)
     glossary: Glossary
     provider = ctx.cfg.script.provider
-    if provider == "manual" or not cands:
+    if provider == "manual" or not cands or not wl:
+        # Without a CEFR word list the candidates are unranked noise; the script's own vocabulary is better.
+        if not wl:
+            ctx.log("[yellow]CEFR ro'yxati yo'q (assets/cefr/wordlist.csv); skript lug'ati ishlatiladi[/yellow]")
         glossary = Glossary(glossary=sc.vocabulary)
     else:
         turns_text = "\n".join(f"[{t.i}] {sc.hosts[t.speaker]}: {t.text}" for t in sc.turns)

@@ -1,0 +1,105 @@
+{
+  "glossary": [
+    {
+      "word": "forgetting curve",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/fəˈɡetɪŋ kɜːv/",
+      "definition": "A line that shows how quickly we forget new information over time.",
+      "example": "Your story is the forgetting curve in real life.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "spaced repetition",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/speɪst ˌrepəˈtɪʃn/",
+      "definition": "A way of learning where you review something again and again with longer and longer gaps.",
+      "example": "But if you want to retain the words, use spaced repetition.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "active recall",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/ˈæktɪv rɪˈkɔːl/",
+      "definition": "Trying to bring information back from memory without looking at it.",
+      "example": "See? You just did active recall.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "to recall",
+      "pos": "verb",
+      "cefr": "B2",
+      "ipa": "/rɪˈkɔːl/",
+      "definition": "To bring something back from your memory.",
+      "example": "To recall means to bring something back from your memory.",
+      "collocation": "",
+      "first_turn": 60
+    },
+    {
+      "word": "to retain",
+      "pos": "verb",
+      "cefr": "C1",
+      "ipa": "/rɪˈteɪn/",
+      "definition": "To keep something, for example new information, in your memory.",
+      "example": "To retain means to keep something in your memory.",
+      "collocation": "",
+      "first_turn": 112
+    },
+    {
+      "word": "cramming",
+      "pos": "noun",
+      "cefr": "C1",
+      "ipa": "/ˈkræmɪŋ/",
+      "definition": "Trying to learn a lot of information in a very short time, usually just before an exam.",
+      "example": "Cramming is enough for the exam, but it's not enough for a month.",
+      "collocation": "",
+      "first_turn": 102
+    },
+    {
+      "word": "exhausted",
+      "pos": "adjective",
+      "cefr": "B1",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "definition": "Very, very tired.",
+      "example": "I was exhausted after work.",
+      "collocation": "",
+      "first_turn": 50
+    },
+    {
+      "word": "familiar",
+      "pos": "adjective",
+      "cefr": "B1",
+      "ipa": "/fəˈmɪliə/",
+      "definition": "Known to you because you have seen or heard it before.",
+      "example": "Reading again gives you a familiar feeling.",
+      "collocation": "",
+      "first_turn": 68
+    },
+    {
+      "word": "syllable",
+      "pos": "noun",
+      "cefr": "B2",
+      "ipa": "/ˈsɪləbl/",
+      "definition": "A small piece of a word that has one vowel sound.",
+      "example": "A syllable is a small piece of a word.",
+      "collocation": "",
+      "first_turn": 18
+    },
+    {
+      "word": "word family",
+      "pos": "noun phrase",
+      "cefr": "B2",
+      "ipa": "/ˈwɜːd ˌfæməli/",
+      "definition": "A group of related words that come from the same base word.",
+      "example": "A word family is a group of related words.",
+      "collocation": "",
+      "first_turn": 94
+    }
+  ],
+  "bonus_c1_c2": []
+}

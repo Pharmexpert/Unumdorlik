@@ -1,0 +1,1590 @@
+{
+  "slug": "why-your-brain-forgets-new-words",
+  "title": "Why Your Brain Forgets New Words (and the 3-Step Fix)",
+  "alt_titles": [
+    "Stop Forgetting English Words: Meet It, Test It, Space It",
+    "5 Words a Day = 1,800 Words a Year: How to Remember Them",
+    "The Forgetting Curve: Why You Forget New English Words So Fast"
+  ],
+  "hook_line": "Learned twenty words on Monday and remember three today? That's not a bad memory. That's a normal brain, and you can fix it in three simple steps.",
+  "hosts": {
+    "A": "Mia",
+    "B": "James"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "1. The Forgetting Curve",
+      "takeaway": "Forgetting is normal and fastest at the start, but every review slows it down."
+    },
+    {
+      "id": "SECTION_2",
+      "title": "2. Spaced Repetition",
+      "takeaway": "Review with gaps, and make the gaps slowly longer."
+    },
+    {
+      "id": "SECTION_3",
+      "title": "3. Active Recall",
+      "takeaway": "Don't just read it again, try to remember it without looking."
+    },
+    {
+      "id": "SECTION_4",
+      "title": "4. The 3-Step Fix: Meet, Test, Space",
+      "takeaway": "Meet it, test it, space it, and let sleep help you."
+    }
+  ],
+  "turns": [
+    {
+      "i": 1,
+      "section": "HOOK",
+      "speaker": "B",
+      "text": "Mia, I have a problem. Last Monday I learned twenty new English words. Today? I remember three. Maybe four.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": "James looks at a notebook full of crossed-out words"
+    },
+    {
+      "i": 2,
+      "section": "HOOK",
+      "speaker": "A",
+      "text": "Only three? [laughs] Don't worry, James. That's not a bad memory. That's a normal brain. And today we're going to fix it in three simple steps.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Title card: Why Your Brain Forgets New Words"
+    },
+    {
+      "i": 3,
+      "section": "HOOK",
+      "speaker": "B",
+      "text": "Three steps? Okay, I'm listening. Very carefully. And this time, I'm going to remember it.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 4,
+      "section": "INTRO",
+      "speaker": "A",
+      "text": "Hello and welcome. I'm Mia, and this is the show where we learn English together, one small step at a time.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Hosts on screen with name tags"
+    },
+    {
+      "i": 5,
+      "section": "INTRO",
+      "speaker": "B",
+      "text": "And I'm James. Today's question is a big one. Why does my brain forget new words so fast?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 6,
+      "section": "INTRO",
+      "speaker": "A",
+      "text": "Great question. We'll look at three ideas from memory science. First, the forgetting curve. Second, spaced repetition. And third, active recall.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Three terms appear one by one"
+    },
+    {
+      "i": 7,
+      "section": "INTRO",
+      "speaker": "B",
+      "text": "Wow, those sound very scientific. Forgetting curve, spaced repetition, active recall. Do I need a white coat?",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 8,
+      "section": "INTRO",
+      "speaker": "A",
+      "text": "No white coat. I promise it's easy. And at the end, you'll get a simple three-step plan. Meet it, test it, space it.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 9,
+      "section": "INTRO",
+      "speaker": "B",
+      "text": "Meet it, test it, space it. I like it already. It sounds like a song.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 10,
+      "section": "INTRO",
+      "speaker": "A",
+      "text": "Ha, maybe it is. By the end of the episode, you'll be singing it.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 11,
+      "section": "CTA",
+      "speaker": "A",
+      "text": "Before we start, a quick favour. If you want to remember new words, subscribe and click the bell. We come back every week, and that's a kind of repetition too.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Subscribe button and bell animation"
+    },
+    {
+      "i": 12,
+      "section": "CTA",
+      "speaker": "B",
+      "text": "Ha! Clever. And please write in the comments. How many new words did you learn last week, and how many do you still remember?",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": "Comment icon with the question"
+    },
+    {
+      "i": 13,
+      "section": "CTA",
+      "speaker": "A",
+      "text": "Be honest! Okay, let's begin.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 14,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "So, our first idea is the forgetting curve. Let's go back in time, to the year 1885.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Chapter card: 1. The Forgetting Curve"
+    },
+    {
+      "i": 15,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "1885? That's a long time ago. No phones, no internet, no language apps.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 16,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Exactly. A German scientist called Hermann Ebbinghaus wanted to understand memory. So he tested himself.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Old-style drawing of a man at a desk, year 1885"
+    },
+    {
+      "i": 17,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "Himself? He didn't have any students to test?",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 18,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "[laughs] He did it on his own. He learned lists of syllables with no meaning. A syllable is a small piece of a word. Imagine little sounds like 'dax' or 'bok'. Not real words.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Cards with made-up syllables"
+    },
+    {
+      "i": 19,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "Why no meaning? Isn't that harder?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 20,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "That's the point. With no meaning, nothing could help him remember. He could see memory on its own. Then he checked how fast he forgot the syllables.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 21,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "And what did he find?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 22,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Something very important. Forgetting is fastest in the first hours and the first days. After that, it slows down.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": "Curve drops fast, then becomes flatter"
+    },
+    {
+      "i": 23,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "So the big drop comes early. Like a slide in a playground? Fast at the top, slow at the bottom?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 24,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "That's a lovely picture, James. And if you don't review the words, after a few days a big part of them is gone.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 25,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "A big part. Okay, that explains my twenty words.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 26,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Yes! But here's the good news. Every time you review, the curve goes up again. And the next time, you forget more slowly.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": "Curve jumps up after each review and drops more gently"
+    },
+    {
+      "i": 27,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "So every review is like a little push back up the hill.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 28,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Nice. Now let's make it real. You meet a new person at a party and hear their name. You see a new word in a film. A friend tells you a phone number. Your teacher writes a word on the board.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Four small pictures: party, film, phone, board"
+    },
+    {
+      "i": 29,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "And one hour later, I have no idea. Yes, that's me in all four.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 30,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Right. And that's the forgetting curve. It isn't a bad memory. It's how every brain works. Even Ebbinghaus forgot.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 31,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "That makes me feel better. If a famous scientist forgot things, then I'm allowed to forget too.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 32,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Of course you are. The real question isn't how to stop forgetting. It's how to slow it down.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 33,
+      "section": "SECTION_1",
+      "speaker": "B",
+      "text": "Okay, I see it now. So what's the main idea of part one?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 34,
+      "section": "SECTION_1",
+      "speaker": "A",
+      "text": "Forgetting is normal and fastest at the start, but every review slows it down.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Takeaway text on screen"
+    },
+    {
+      "i": 35,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "So if every review helps, I should just review a lot. Like, ten times on Monday night?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": "Chapter card: 2. Spaced Repetition"
+    },
+    {
+      "i": 36,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Ah, that's a very common idea. But no. This brings us to idea number two. Spaced repetition.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 37,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Spaced repetition. Space, like the stars and the moon?",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 38,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Not that space. Here, space means a gap of time. You repeat a word, then you wait, then you repeat it again.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 39,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Hmm, so not all at once.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 40,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Exactly. In 2006, a scientist called Cepeda and his team looked at more than three hundred experiments about this.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Number on screen: 300+ experiments"
+    },
+    {
+      "i": 41,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "More than three hundred? That's a lot of reading.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 42,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "It is. And the result was clear. Take the same amount of study time. If you divide it into pieces with gaps, instead of using it all at once, you remember much better.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "One big block of time vs. small blocks with gaps"
+    },
+    {
+      "i": 43,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "So the same time, but in pieces. Can you give me a plan? I love plans.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 44,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Sure. Here's a practical one. Day one, learn the word. Day two, review it. Day four, review again. Then after one week. Then after two weeks. Then after one month.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Calendar: day 1, day 2, day 4, 1 week, 2 weeks, 1 month"
+    },
+    {
+      "i": 45,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Day one, day two, day four, one week, two weeks, one month. The gaps get longer.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 46,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Yes, and that's the clever part. A longer gap makes your long-term memory stronger. Your brain has to work a little harder to find the word.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 47,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "So longer is always better? Great. I'll review once a year, then!",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 48,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Nice try. No. If the gap is too long, the word disappears completely. Then you have to learn it again from the start.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 49,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Right. Not too short, not too long. Like cooking pasta.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 50,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Ha! Exactly like pasta. Let me give you some examples. You learn the word 'exhausted' on Monday. You check it on Tuesday, then on Thursday, then next Monday.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Week planner: Mon, Tue, Thu, next Mon"
+    },
+    {
+      "i": 51,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Monday, Tuesday, Thursday, next Monday. That's easy to follow. What else?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 52,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Some people use an app, like Anki. It shows you each word on the right day. Other people use a simple notebook with dates on each page.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Phone app screen next to a paper notebook"
+    },
+    {
+      "i": 53,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "Wait, so the app does the planning for me?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 54,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Yes, that's the nice part. You just open it every day, and it shows you the right words.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 55,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "I like notebooks. I can draw little pictures next to the words.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 56,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "Good idea. And some people put sticky notes on the fridge, and change them every few days.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Sticky notes on a fridge"
+    },
+    {
+      "i": 57,
+      "section": "SECTION_2",
+      "speaker": "B",
+      "text": "I have a fridge. I have sticky notes. So I have no excuse.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 58,
+      "section": "SECTION_2",
+      "speaker": "A",
+      "text": "None at all! So, the main idea: review with gaps, and make the gaps slowly longer.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Takeaway text on screen"
+    },
+    {
+      "i": 59,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Okay, but Mia, when I review, I just read my list again. Is that okay?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": "Chapter card: 3. Active Recall"
+    },
+    {
+      "i": 60,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "Good question. That's our third idea. Active recall. To recall means to bring something back from your memory.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 61,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "To recall. So it's like remember, but on purpose?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 62,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "Yes, nice way to say it. Also in 2006, two scientists, Roediger and Karpicke, did a study with students.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Names on screen: Roediger and Karpicke, 2006"
+    },
+    {
+      "i": 63,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Another study from 2006. That was a busy year for memory.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 64,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "It was. Some students read a text again. Other students tested themselves on it. One week later, who remembered more?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": "Two groups: reading again vs. testing"
+    },
+    {
+      "i": 65,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Hmm. The readers? They looked at the text more.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 66,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "That's what most people think. But no. The students who tested themselves remembered a lot more. The readers remembered much less.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "The testing group is clearly ahead"
+    },
+    {
+      "i": 67,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Really? But reading feels so good. I read my list and I think, yes, I know this.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 68,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "That's the problem. Reading again gives you a familiar feeling. Familiar means you've seen it before. But feeling familiar is not the same as knowing.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 69,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Oh. So it's like when I see someone in the street. My brain says, I know this face! But I can't say the name.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 70,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "Perfect example! When you try to remember without looking, that hard work makes the memory stronger.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 71,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "So looking at my list a hundred times is...",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 72,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "It feels nice, but it's not real practice. Your brain is resting, not working.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 73,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "So how do I test myself? Give me some ideas.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 74,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "Here are four. One, use word cards. Look at the front and say the meaning before you turn it over. Two, cover the meanings in your notebook and try to remember them.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "A word card turning over"
+    },
+    {
+      "i": 75,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Okay, cards and covering. That's two.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 76,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "Three, ask yourself questions. For example, what's the English word for very, very tired? Four, make your own sentence with the word.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 77,
+      "section": "SECTION_3",
+      "speaker": "B",
+      "text": "Very, very tired. Wait, wait. Exhausted!",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 78,
+      "section": "SECTION_3",
+      "speaker": "A",
+      "text": "See? You just did active recall. So, the main idea: don't just read it again, try to remember it without looking.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Takeaway text on screen"
+    },
+    {
+      "i": 79,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Okay, I've got three ideas now. Can you put them together for me?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": "Chapter card: 4. The 3-Step Fix"
+    },
+    {
+      "i": 80,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Of course. Here's the three-step fix. Step one, meet it. Step two, test it. Step three, space it.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Three big words: MEET, TEST, SPACE"
+    },
+    {
+      "i": 81,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Meet it, test it, space it. Let's start with meet it.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 82,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Meet the new word in a sentence or a short story, not just as a translation. And remember the situation. Where were you? Who said it?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 83,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Like when my friend said 'I'm exhausted' after her long run? I remember her face, and the word.",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 84,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Yes! That's a great memory. Now the word has a place and a person.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 85,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "So not just, exhausted equals very tired?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 86,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Right. A sentence is better. I was exhausted after work. And here's a tip. A sentence about yourself is easier to remember.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Sentence on screen: I was exhausted after work."
+    },
+    {
+      "i": 87,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Because it's about me. My favourite topic. [laughs]",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 88,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Everyone's favourite! Step two, test it. Look at the front of the card and try to remember the back. If you can't remember, that's normal. Look, and try again later.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 89,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "So failing is part of the plan. Good. I'm very good at that part.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 90,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Step three, space it. Review the word tomorrow, then in three days, then in a week. You can use Anki or a simple notebook.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Timeline: tomorrow, 3 days, 1 week"
+    },
+    {
+      "i": 91,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "And how many new words a day? Fifty?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 92,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Let's do some maths. Just five new words a day for one year is about eighteen hundred words.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "5 words x 365 days = about 1,800 words"
+    },
+    {
+      "i": 93,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "[excited] Eighteen hundred? From only five a day? That sounds possible, even for me.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 94,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "And for B1 level, about two thousand five hundred word families are usually enough. It's not an exact number, but it shows that small steps become a lot.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "About 2,500 word families = B1"
+    },
+    {
+      "i": 95,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Wait, what's a word family?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 96,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "A word family is a group of related words. Like happy, happiness and unhappy. That's one word family.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Word family tree: happy, happiness, unhappy"
+    },
+    {
+      "i": 97,
+      "section": "SECTION_4",
+      "speaker": "B",
+      "text": "Okay, I see it now. And one more question. Is it okay to study before bed?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 98,
+      "section": "SECTION_4",
+      "speaker": "A",
+      "text": "Yes! Sleep makes memory stronger. When you sleep after learning, you remember better. So, the main idea: meet it, test it, space it, and let sleep help you.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Takeaway text on screen"
+    },
+    {
+      "i": 99,
+      "section": "STORY",
+      "speaker": "B",
+      "text": "Can I tell you a story? It's a bit embarrassing.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": "Chapter card: James's Story"
+    },
+    {
+      "i": 100,
+      "section": "STORY",
+      "speaker": "A",
+      "text": "Of course. Those are the best ones.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 101,
+      "section": "STORY",
+      "speaker": "B",
+      "text": "[thoughtful] At school, I had an English test on a Friday. On Thursday night, I learned fifty words. All in one night.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": "Late-night desk with a lamp and a long word list"
+    },
+    {
+      "i": 102,
+      "section": "STORY",
+      "speaker": "A",
+      "text": "Ah. That's called cramming. Cramming means trying to learn a lot in a very short time, usually just before an exam.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Word on screen: cramming"
+    },
+    {
+      "i": 103,
+      "section": "STORY",
+      "speaker": "B",
+      "text": "Yes, cramming. And it worked! I passed the test. I was so happy.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 104,
+      "section": "STORY",
+      "speaker": "A",
+      "text": "And one month later?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 105,
+      "section": "STORY",
+      "speaker": "B",
+      "text": "[laughs] One month later, I remembered almost nothing. Maybe exhausted, because I was exhausted that Friday.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 106,
+      "section": "STORY",
+      "speaker": "A",
+      "text": "That's a perfect story. Cramming is enough for the exam, but it's not enough for a month. Your story is the forgetting curve in real life.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 107,
+      "section": "STORY",
+      "speaker": "B",
+      "text": "So I didn't have a bad memory. I had a bad plan.",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 108,
+      "section": "STORY",
+      "speaker": "A",
+      "text": "Exactly. And now you have a better one.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 109,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Let's practise. I'll give you a situation, and you tell me what to do. Ready?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Chapter card: Practice"
+    },
+    {
+      "i": 110,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Ready. Please go easy on me.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 111,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Situation one. Your friend has an exam in two days. She wants to learn forty words tonight. What do you say?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Situation 1 on screen"
+    },
+    {
+      "i": 112,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "I say, don't cram! Well, okay, it can work for the exam. But if you want to retain the words, use spaced repetition.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 113,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Good. And retain is a great word. To retain means to keep something in your memory. Situation two. You read your word list three times and you feel great. Is that enough?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Situation 2 on screen"
+    },
+    {
+      "i": 114,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "No. That's just a familiar feeling. I should test myself, with cards, without looking.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 115,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Exactly. Situation three. You learned a new word today. When should you review it?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Situation 3 on screen"
+    },
+    {
+      "i": 116,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Tomorrow, then day four, then one week, then two weeks, then one year?",
+      "style": "thoughtful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 117,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Almost! After two weeks comes one month, not one year.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 118,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Right, one month. If the gap is too long, the word is gone.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 119,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Situation four. You look at a card, and you can't remember the word. What now?",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Situation 4 on screen"
+    },
+    {
+      "i": 120,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Don't worry. It's normal. Look at the back, then test it again later.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 121,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Great. Situation five. Make a sentence about yourself with the word exhausted.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Situation 5 on screen"
+    },
+    {
+      "i": 122,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Hmm. I'm always exhausted on Monday mornings before my coffee.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 123,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "Perfect, and very true. You'll remember that one. Okay, last one. It's eleven at night. You've just learned five new words. Should you study more, or go to bed?",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Situation 6 on screen: 11 p.m."
+    },
+    {
+      "i": 124,
+      "section": "PRACTICE",
+      "speaker": "B",
+      "text": "Go to bed! Sleep makes memory stronger. So sleep is part of the plan.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 125,
+      "section": "PRACTICE",
+      "speaker": "A",
+      "text": "I love that answer. The best homework ever.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 126,
+      "section": "SHADOWING",
+      "speaker": "B",
+      "text": "Now it's your turn, everyone. Listen and repeat after us. Say it out loud.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Chapter card: Repeat after us"
+    },
+    {
+      "i": 127,
+      "section": "SHADOWING",
+      "speaker": "A",
+      "text": "Forgetting is normal.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": "Sentence on screen with a pause bar"
+    },
+    {
+      "i": 128,
+      "section": "SHADOWING",
+      "speaker": "B",
+      "text": "Every review makes the curve go up.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 129,
+      "section": "SHADOWING",
+      "speaker": "A",
+      "text": "Don't just read it. Recall it.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 130,
+      "section": "SHADOWING",
+      "speaker": "B",
+      "text": "Meet it, test it, space it.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 131,
+      "section": "SHADOWING",
+      "speaker": "A",
+      "text": "I was exhausted after work.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 132,
+      "section": "SHADOWING",
+      "speaker": "B",
+      "text": "Cramming works for the exam, not for a month.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 133,
+      "section": "SHADOWING",
+      "speaker": "A",
+      "text": "Five words a day can change my English.",
+      "style": "slow",
+      "slow": true,
+      "visual_cue": ""
+    },
+    {
+      "i": 134,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "Okay, let me try the recap. Mia, tell me if I get something wrong.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Chapter card: Recap"
+    },
+    {
+      "i": 135,
+      "section": "RECAP",
+      "speaker": "A",
+      "text": "Go for it.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 136,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "One, the forgetting curve. Ebbinghaus found that we forget fastest in the first hours and days.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Recap point 1 with the curve"
+    },
+    {
+      "i": 137,
+      "section": "RECAP",
+      "speaker": "A",
+      "text": "Right. And every review slows the forgetting down.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 138,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "Two, spaced repetition. Day one, day two, day four, one week, two weeks, one month.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Recap point 2 with the calendar"
+    },
+    {
+      "i": 139,
+      "section": "RECAP",
+      "speaker": "A",
+      "text": "Yes. Cepeda and his team looked at more than three hundred experiments, and gaps helped people remember.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 140,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "Three, active recall. Testing yourself is better than reading again.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Recap point 3 with a word card"
+    },
+    {
+      "i": 141,
+      "section": "RECAP",
+      "speaker": "A",
+      "text": "Exactly. And the numbers?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 142,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "Five words a day is about eighteen hundred words in a year.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 143,
+      "section": "RECAP",
+      "speaker": "A",
+      "text": "Perfect. And the fix?",
+      "style": "curious",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 144,
+      "section": "RECAP",
+      "speaker": "B",
+      "text": "Meet it, test it, space it. Plus good sleep. And no cramming.",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 145,
+      "section": "VOCABULARY",
+      "speaker": "A",
+      "text": "Let's look at today's key words. Forgetting curve. The line that shows how fast we forget.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Word list on screen"
+    },
+    {
+      "i": 146,
+      "section": "VOCABULARY",
+      "speaker": "B",
+      "text": "Spaced repetition. Reviewing with gaps that get longer. Active recall. Remembering without looking.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 147,
+      "section": "VOCABULARY",
+      "speaker": "A",
+      "text": "To recall. To bring something back from memory. To retain. To keep something in memory.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 148,
+      "section": "VOCABULARY",
+      "speaker": "B",
+      "text": "Cramming. Learning a lot just before an exam. Exhausted. Very, very tired.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 149,
+      "section": "VOCABULARY",
+      "speaker": "A",
+      "text": "Familiar. Something you've seen before. Syllable. A small piece of a word. And word family. A group of related words.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 150,
+      "section": "VOCABULARY",
+      "speaker": "B",
+      "text": "Quick check, Mia. What's the opposite of retain?",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 151,
+      "section": "VOCABULARY",
+      "speaker": "A",
+      "text": "Forget! Nice try, James, but I'm the teacher.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 152,
+      "section": "CHALLENGE",
+      "speaker": "A",
+      "text": "Here's your challenge for this week. Choose five new words from this episode. For each word, write one sentence about yourself.",
+      "style": "clear",
+      "slow": false,
+      "visual_cue": "Chapter card: Your Challenge"
+    },
+    {
+      "i": 153,
+      "section": "CHALLENGE",
+      "speaker": "B",
+      "text": "Then test yourself tomorrow, and again in three days. No looking!",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 154,
+      "section": "CHALLENGE",
+      "speaker": "A",
+      "text": "And in one week, tell us in the comments how many words you still remember.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 155,
+      "section": "CHALLENGE",
+      "speaker": "B",
+      "text": "And make the sentences about your real life. Like, I was exhausted after my English class.",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 156,
+      "section": "CHALLENGE",
+      "speaker": "A",
+      "text": "[laughs] Not after our class, I hope!",
+      "style": "playful",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 157,
+      "section": "OUTRO",
+      "speaker": "B",
+      "text": "Mia, this was great. I think I'll actually remember this episode.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": "Hosts wave"
+    },
+    {
+      "i": 158,
+      "section": "OUTRO",
+      "speaker": "A",
+      "text": "Test yourself tomorrow and we'll see! Thanks for listening, everyone.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    },
+    {
+      "i": 159,
+      "section": "OUTRO",
+      "speaker": "B",
+      "text": "Bye for now. And remember, meet it, test it, space it!",
+      "style": "excited",
+      "slow": false,
+      "visual_cue": "End screen with subscribe button"
+    },
+    {
+      "i": 160,
+      "section": "OUTRO",
+      "speaker": "A",
+      "text": "Bye! See you next week.",
+      "style": "warm",
+      "slow": false,
+      "visual_cue": ""
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "forgetting curve",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/fəˈɡetɪŋ kɜːv/",
+      "definition": "A line that shows how quickly we forget new information over time.",
+      "example": "Your story is the forgetting curve in real life.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "spaced repetition",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/speɪst ˌrepəˈtɪʃn/",
+      "definition": "A way of learning where you review something again and again with longer and longer gaps.",
+      "example": "But if you want to retain the words, use spaced repetition.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "active recall",
+      "pos": "noun phrase",
+      "cefr": "C1",
+      "ipa": "/ˈæktɪv rɪˈkɔːl/",
+      "definition": "Trying to bring information back from memory without looking at it.",
+      "example": "See? You just did active recall.",
+      "collocation": "",
+      "first_turn": 6
+    },
+    {
+      "word": "to recall",
+      "pos": "verb",
+      "cefr": "B2",
+      "ipa": "/rɪˈkɔːl/",
+      "definition": "To bring something back from your memory.",
+      "example": "To recall means to bring something back from your memory.",
+      "collocation": "",
+      "first_turn": 60
+    },
+    {
+      "word": "to retain",
+      "pos": "verb",
+      "cefr": "C1",
+      "ipa": "/rɪˈteɪn/",
+      "definition": "To keep something, for example new information, in your memory.",
+      "example": "To retain means to keep something in your memory.",
+      "collocation": "",
+      "first_turn": 112
+    },
+    {
+      "word": "cramming",
+      "pos": "noun",
+      "cefr": "C1",
+      "ipa": "/ˈkræmɪŋ/",
+      "definition": "Trying to learn a lot of information in a very short time, usually just before an exam.",
+      "example": "Cramming is enough for the exam, but it's not enough for a month.",
+      "collocation": "",
+      "first_turn": 102
+    },
+    {
+      "word": "exhausted",
+      "pos": "adjective",
+      "cefr": "B1",
+      "ipa": "/ɪɡˈzɔːstɪd/",
+      "definition": "Very, very tired.",
+      "example": "I was exhausted after work.",
+      "collocation": "",
+      "first_turn": 50
+    },
+    {
+      "word": "familiar",
+      "pos": "adjective",
+      "cefr": "B1",
+      "ipa": "/fəˈmɪliə/",
+      "definition": "Known to you because you have seen or heard it before.",
+      "example": "Reading again gives you a familiar feeling.",
+      "collocation": "",
+      "first_turn": 68
+    },
+    {
+      "word": "syllable",
+      "pos": "noun",
+      "cefr": "B2",
+      "ipa": "/ˈsɪləbl/",
+      "definition": "A small piece of a word that has one vowel sound.",
+      "example": "A syllable is a small piece of a word.",
+      "collocation": "",
+      "first_turn": 18
+    },
+    {
+      "word": "word family",
+      "pos": "noun phrase",
+      "cefr": "B2",
+      "ipa": "/ˈwɜːd ˌfæməli/",
+      "definition": "A group of related words that come from the same base word.",
+      "example": "A word family is a group of related words.",
+      "collocation": "",
+      "first_turn": 94
+    }
+  ],
+  "recap_points": [
+    "The forgetting curve: in 1885 Hermann Ebbinghaus found that we forget fastest in the first hours and days, and every review slows forgetting down.",
+    "Spaced repetition: Cepeda and his team (2006) looked at more than 300 experiments. The same study time with gaps works much better than all at once. Try day 1, day 2, day 4, 1 week, 2 weeks, 1 month.",
+    "Active recall: Roediger and Karpicke (2006) found that one week later, students who tested themselves remembered much more than students who read the text again.",
+    "A familiar feeling is not the same as knowing. Try to remember without looking.",
+    "The 3-step fix: meet it in a sentence, test it without looking, space it over time. Sleep helps, and cramming only works for the exam.",
+    "Five new words a day for one year is about 1,800 words, and about 2,500 word families is usually enough for B1."
+  ],
+  "challenge": "Choose five new words from this episode and write one sentence about your real life with each word. Test yourself tomorrow and again in three days without looking. After one week, tell us in the comments how many you still remember.",
+  "word_count": 2468
+}
