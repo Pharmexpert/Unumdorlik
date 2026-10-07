@@ -1,0 +1,72 @@
+# Nusxa oling: config/pipeline.yaml (gitignore'da). Maxfiy kalitlar .env da, bu yerda EMAS.
+channel:
+  name: "Unumdorlik English"
+  niche: "English learning podcast for curious professionals"
+  category_id: 27            # Education
+  default_language: en
+  publish_slots: ["Mon 04:00 UTC", "Wed 04:00 UTC", "Fri 04:00 UTC"]
+  privacy_default: private   # API loyihasi YouTube auditidan o'tmaguncha faqat private mumkin
+
+hosts:
+  A: {name: "Mia",   role: "teacher",  tts_voice: "Kore",  style: "warm, clear, slightly slow"}
+  B: {name: "James", role: "learner",  tts_voice: "Puck",  style: "curious, lively, friendly"}
+  character_sheet_dir: assets/characters   # Pixar-uslub referens rasmlari (bir marta yaratiladi)
+
+script:
+  provider: anthropic
+  model: claude-opus-5-5          # yoki claude-sonnet-5-5 (arzonroq)
+  target_words: 2500
+  words_per_minute: 140
+  vocab_items: 10
+  cefr_wordlist: assets/cefr/oxford5000.csv
+
+audio:
+  engine: gemini_tts              # gemini_tts | notebooklm
+  gemini_tts_model: gemini-3.8-flash-tts
+  sample_rate: 24000
+  loudness_lufs: -16
+  music_bed: assets/music/intro.mp3   # litsenziyali/royalty-free
+  notebooklm:
+    mode: notebooklm-py           # notebooklm-py (norasmiy) | enterprise_api (rasmiy, preview)
+    format: deep-dive
+    length: long
+
+alignment:
+  engine: whisperx                # skript + audio -> so'z vaqtlari (forced alignment)
+  model: large-v3
+
+visuals:
+  engine: gemini_image            # gemini_image (rasmiy API) | flow_gflow (norasmiy, flow.google.com)
+  model: gemini-3.1-flash-image
+  aspect_ratio: "16:9"
+  resolution: "2K"
+  style_prompt_file: prompts/03_storyboard_pixar.md
+  seconds_per_image: 35
+  ken_burns: true
+  intro_video:                    # ixtiyoriy: Veo 3.1 bilan 8 s intro
+    enabled: false
+    model: veo-3.1
+
+render:
+  width: 1920
+  height: 1080
+  fps: 30
+  subtitles: word_sync            # word_sync | line | none
+  vocab_cards: true
+  chapter_titles: true
+  font: assets/fonts/Inter.ttf
+
+thumbnail:
+  model: gemini-3.1-flash-image
+  variants: 2
+
+youtube:
+  client_secrets: secrets/youtube_client_secret.json
+  token_file: secrets/youtube_token.json
+  upload_captions: true
+  made_for_kids: false
+  tags_max: 20
+
+approval:
+  required: true
+  channel: github_pr              # github_pr | telegram | none

@@ -1,0 +1,11 @@
+config/pipeline.yaml
+secrets/
+.env
+episodes/*/audio/
+episodes/*/images/
+episodes/*/render/
+*.mp4
+*.m4a
+*.wav
+__pycache__/
+.venv/
