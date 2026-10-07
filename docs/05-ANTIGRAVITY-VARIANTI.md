@@ -59,6 +59,7 @@ agentda**. Shunda agent kvotasi tejaladi (1 epizod ≈ 3–5 agent so'rovi) va n
 - `.agent/workflows/episode.md` — `/episode <slug>`: to'liq epizod.
 - `.agent/workflows/images-flow.md` — `/images-flow <slug>`: faqat Flow rasmlar.
 - `.agent/workflows/publish-studio.md` — `/publish-studio <slug>`: faqat YouTube Studio.
+- `.agent/workflows/character-sheet.md` — `/character-sheet`: boshlovchilar referens rasmlari (bir marta).
 - `.agents/mcp_config.json` — MCP serverlar (GitHub, notebooklm-py, gflow, Composio ixtiyoriy).
 
 Eslatma: Antigravity versiyasiga qarab kataloglar `.agent/` yoki `.agents/` bo'ladi; IDE

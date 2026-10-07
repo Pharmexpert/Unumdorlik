@@ -12,6 +12,7 @@ Maqsad: inson faqat **mavzu tanlaydi** va **tasdiqlaydi**, qolgan hamma bosqich 
 | [docs/03-FORMAT-STANDARTI.md](docs/03-FORMAT-STANDARTI.md) | Epizod formati standarti (namuna videolar tahlili asosida) |
 | [docs/04-BEPUL-VARIANTLAR.md](docs/04-BEPUL-VARIANTLAR.md) | Har bosqich uchun bepul muqobillar va uchta tayyor stack ($0 / $20 oy / $2 epizod) |
 | [docs/05-ANTIGRAVITY-VARIANTI.md](docs/05-ANTIGRAVITY-VARIANTI.md) | Google Antigravity orqali amalga oshirish: brauzer-agent bilan Flow, NotebookLM, YouTube Studio |
+| [docs/06-SOZLASH.md](docs/06-SOZLASH.md) | Sozlash yo'riqnomasi: Gemini kaliti, Claude Code login/token, character sheet, YouTube OAuth |
 | [.agent/](.agent/) | Antigravity qoidalari va `/episode`, `/images-flow`, `/publish-studio` workflow'lari |
 | [prompts/](prompts/) | Har bir AI bosqichi uchun prompt shablonlari |
 | [config/pipeline.example.yaml](config/pipeline.example.yaml) | Liniya konfiguratsiyasi namunasi |
